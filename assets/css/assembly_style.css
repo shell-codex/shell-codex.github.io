@@ -1,0 +1,116 @@
+/* Minimal styles - mobile-first */
+
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #9aa4b2;
+  --accent: #7dd3fc;
+  --text: #e6eef6;
+}
+
+/* Reset + layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;     /* ensures footer sits at bottom */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav a {
+  color: var(--muted);
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.site-header {
+  background: #141c28;
+  height: 100px;               /* fixed height */
+
+  display: flex;
+  align-items: center;         /* vertical centering */
+}
+
+/* Footer */
+.site-footer {
+  background: #141c28;
+  height: 90px;                /* fixed height */
+
+  display: flex;
+  align-items: center;         /* vertical center */
+  justify-content: center;     /* horizontal center */
+  color: var(--muted);
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--text);
+}
+
+code,
+pre {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+    monospace;
+  color: var(--accent);
+}
+
+pre {
+  padding: 1rem;
+  overflow: auto;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Links inside main content only */
+.content a {
+  color: var(--accent);         /* normal link color */
+  text-decoration: underline;
+}
+
+.content a:visited {
+  color: #38bdf8;               /* visited link */
+}
+
+.content a:hover,
+.content a:focus {
+  color: #7dd3fc;               /* hover/focus */
+  text-decoration: underline;
+}
