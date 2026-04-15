@@ -1,7 +1,7 @@
 title: Shellcodex
 description: "Binary Exploitation, Shellcoding, ROP, Assembly, and other Low-Level Shenanigans."
 baseurl: ""
-url: "https://shell-codex.github.io"
+url: "https://shellcodex.dev"
 
 markdown: kramdown
 highlighter: rouge
