@@ -13,3 +13,8 @@ permalink: /assembly/
 ### x86 Assembly
 - [x86 Registers]({{ '/assembly/x86-registers.html' | relative_url }})
 - [x86 Searchable Syscall Table]({{ '/assembly/x86-syscall-table.html' | relative_url }})
+
+---
+
+## Instruction Set
+- [x86 and x86-64 Instruction Set]({{ '/assembly/instruction-set.html' | relative_url }})
